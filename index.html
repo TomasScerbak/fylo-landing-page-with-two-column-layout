@@ -24,11 +24,12 @@
       <nav>
         <div class="navbar">
           <div class="nav--logo">
-            <img
-              src="Images/logo.svg"
-              alt="logo of the company"
-              class="header--logo"
-            />
+            <a href="index.html"
+              ><img
+                src="Images/logo.svg"
+                alt="logo of the company"
+                class="header--logo"
+            /></a>
           </div>
           <div>
             <ul class="nav--list">
@@ -41,27 +42,63 @@
       </nav>
     </header>
     <section class="hero">
-      <img
-        src="Images/illustration-1.svg"
-        alt="picuture with big file and cartoon people inside it"
-        class="hero--image"
-      />
-      All your files in one secure location, accessible anywhere. Fylo stores
-      your most important files in one secure location. Access them wherever you
-      need, share and collaborate with friends, family, and co-workers. Get
-      Started
+      <div class="container">
+        <div class="box--one">
+          <img
+            src="Images/illustration-1.svg"
+            alt="picuture with big file and cartoon people inside it"
+            class="hero--image"
+          />
+        </div>
+        <div class="box--two">
+          <h1 class="hero__heading">
+            All your files in one secure location, accessible anywhere.
+          </h1>
+          <p class="hero__text">
+            Fylo stores your most important files in one secure location. Access
+            them wherever you need, share and collaborate with friends, family,
+            and co-workers.
+          </p>
+          <form>
+            <div class="form--input">
+              <input type="email" placeholder="Enter your email..." />
+            </div>
+            <div class="form--button">
+              <button class="btn btn--primary">Get Started</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
     <section class="feature">
-      Stay productive, wherever you are Never let location be an issue when
-      accessing your files. Fylo has you covered for all of your file storage
-      needs. Securely share files and folders with friends, family and
-      colleagues for live collaboration. No email attachments required! See how
-      Fylo works
-    </section>
-    <section class="testimonial">
-      Fylo has improved our team productivity by an order of magnitude. Since
-      making the switch our team has become a well-oiled collaboration machine.
-      Kyle Burton Founder & CEO, Huddle
+      <img
+        src="Images/illustration-2.svg"
+        alt="people with dashboards"
+        class="feature__image"
+      />
+      <h2 class="feature__heading">Stay productive, wherever you are</h2>
+      <p class="feature__text">
+        Never let location be an issue when accessing your files. Fylo has you
+        covered for all of your file storage needs.
+      </p>
+      <p class="feature__text">
+        Securely share files and folders with friends, family and colleagues for
+        live collaboration. No email attachments required!
+      </p>
+      <div class="arrow">
+        <a class="arrow__text" href="#">See how Fylo works</a>
+        <img
+          class="arrow__image"
+          src="Images/icon-arrow.svg"
+          alt="icon of arrow pointing right"
+        />
+      </div>
+      <span class="underline"></span>
+      <div class="testimonial">
+        Fylo has improved our team productivity by an order of magnitude. Since
+        making the switch our team has become a well-oiled collaboration
+        machine. Kyle Burton Founder & CEO, Huddle
+      </div>
     </section>
     <section class="callout">
       Get early access today It only takes a minute to sign up and our free

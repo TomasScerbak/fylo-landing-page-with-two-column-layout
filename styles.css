@@ -29,6 +29,17 @@ body {
   /* Body */
   --ff-raleway: "Raleway", sans-serif;
 }
+h1,
+h2,
+h3 {
+  font-family: var(--ff-open-sans);
+}
+h1 {
+  font-size: 2.5rem;
+}
+p {
+  font-size: 2rem;
+}
 /* Images */
 img {
   width: 100%;
@@ -44,6 +55,62 @@ li {
 a {
   text-decoration: none;
 }
+/* Containers */
+.container {
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .box--one {
+    grid-column: 2 / 3;
+  }
+  .box--two {
+    grid-row: 1 / 2;
+  }
+}
+/* Inputs */
+input {
+  border: 1.8px solid var(--very-dark-blue);
+  border-radius: 5px;
+  width: 100%;
+  height: 4.5rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  opacity: 40%;
+}
+input:focus {
+  border: 2px solid var(--very-dark-blue);
+}
+@media screen and (min-width: 768px) {
+  input {
+    width: 30%;
+  }
+}
+/* Buttons */
+.btn {
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  outline: none;
+  background-color: var(--bright-blue);
+  color: var(--light-grayish-blue);
+  cursor: pointer;
+  height: 4.5rem;
+}
+.btn:hover {
+  background-color: hsl(224, 94%, 65%);
+}
+.btn--primary {
+  border-radius: 5px;
+  width: 99%;
+}
+.btn--secondary {
+  border-radius: 1px;
+}
 /* Navigation Bar */
 .navbar {
   display: flex;
@@ -58,6 +125,7 @@ a {
 }
 .nav--list {
   font-size: 1.5rem;
+  font-family: var(--ff-open-sans);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -80,11 +148,61 @@ a {
 /* Hero Section */
 .hero {
   padding: 1.5rem;
+  text-align: center;
+  color: var(--very-dark-blue);
 }
+form {
+  display: flex;
+  flex-direction: column;
+}
+.form--input {
+  margin-bottom: 1rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+/* Feature Section */
+.feature {
+  padding: 2rem;
+}
+.feature__heading {
+  text-align: center;
+  color: var(--very-dark-blue);
+}
+.feature__text {
+  color: var(--desaturated-blue);
+  font-size: 1.5rem;
+}
+/* Arrow */
+.arrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.arrow a:hover {
+  color: hsl(170, 45%, 62%);
+}
+.arrow__text {
+  padding-right: 0.5rem;
+  color: var(--moderate-cyan);
+}
+.arrow__image {
+  width: 2.5rem;
+}
+.arrow__image:hover {
+  fill: hsl(170, 45%, 62%);
+}
+.underline {
+  display: block;
+  border-bottom: 0.5px solid var(--moderate-cyan);
+  width: 55%;
+  margin: auto;
+  padding-top: 0.5rem;
 }
