@@ -1,0 +1,39 @@
+/* Typography */
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 1.5;
+  font-family: var(--ff-raleway);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  /* Primary Colors */
+  --very-dark-blue: hsl(243, 87%, 12%);
+  --desaturated-blue: hsl(238, 22%, 44%);
+  /* Accent Colors */
+  --bright-blue: hsl(224, 93%, 58%);
+  --moderate-cyan: hsl(170, 45%, 43%);
+  /* Neutral Colors */
+  --light-grayish-blue: hsl(240, 75%, 98%);
+  --light-gray: hsl(0, 0%, 75%);
+
+  /* Font Family */
+
+  /* Headings, Call-to-actions, Header Navigation */
+  --ff-open-sans: "Open Sans", sans-serif;
+  /* Body */
+  --ff-raleway: "Raleway", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
