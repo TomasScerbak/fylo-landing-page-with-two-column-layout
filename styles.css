@@ -29,7 +29,58 @@ body {
   /* Body */
   --ff-raleway: "Raleway", sans-serif;
 }
-
+/* Images */
+img {
+  width: 100%;
+}
+/* Lists */
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+/*Links*/
+a {
+  text-decoration: none;
+}
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+.header--logo {
+  width: 10rem;
+  height: 3rem;
+}
+.nav--list {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50vw;
+  color: var(--very-dark-blue);
+}
+@media screen and (min-width: 768px) {
+  .navbar {
+    padding: 3rem;
+  }
+  .header--logo {
+    width: 12rem;
+    height: 3.5rem;
+  }
+  .nav--list {
+    font-size: 1.8rem;
+    width: 20vw;
+  }
+}
+/* Hero Section */
+.hero {
+  padding: 1.5rem;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
