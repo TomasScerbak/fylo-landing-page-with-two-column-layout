@@ -15,6 +15,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/05c53760e3.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="styles.css" />
     <title>Frontend Mentor | Fylo landing page with two column layout</title>
@@ -61,7 +65,11 @@
           </p>
           <form>
             <div class="form--input">
-              <input type="email" placeholder="Enter your email..." />
+              <input
+                class="input--primary"
+                type="email"
+                placeholder="Enter your email..."
+              />
             </div>
             <div class="form--button">
               <button class="btn btn--primary">Get Started</button>
@@ -71,6 +79,17 @@
       </div>
     </section>
     <section class="feature">
+      <picture class="feature__background">
+        <source
+          media="(min-width: 768px)"
+          srcset="Images/bg-curve-desktop.svg"
+        />
+        <source
+          media="(min-width: 480px)"
+          srcset="Images/bg-curve-mobile.svg"
+        />
+        <img src="Images/bg-curve-mobile.svg" alt="background curved image" />
+      </picture>
       <img
         src="Images/illustration-2.svg"
         alt="people with dashboards"
@@ -94,26 +113,87 @@
         />
       </div>
       <span class="underline"></span>
-      <div class="testimonial">
-        Fylo has improved our team productivity by an order of magnitude. Since
-        making the switch our team has become a well-oiled collaboration
-        machine. Kyle Burton Founder & CEO, Huddle
+      <div class="testimonial--card">
+        <img
+          class="quote__image"
+          src="Images/icon-quotes.svg"
+          alt="image of a quote"
+        />
+        <p class="testimonial">
+          Fylo has improved our team productivity by an order of magnitude.
+          Since making the switch our team has become a well-oiled collaboration
+          machine.
+        </p>
+        <div class="testimony--footer">
+          <div class="author">
+            <img
+              class="author__image"
+              src="/Images/avatar-testimonial.jpg"
+              alt="avatar photo"
+            />
+          </div>
+          <div class="testimony__author">
+            <h3>Kyle Burton</h3>
+            <p class="founder">Founder & CEO, Huddle</p>
+          </div>
+        </div>
+      </div>
+      <div class="callout">
+        <h3 class="callout__heading">Get early access today</h3>
+        <p class="callout__text">
+          It only takes a minute to sign up and our free starter tier is
+          extremely generous. If you have any questions, our support team would
+          be happy to help you.
+        </p>
+        <form class="callout--form">
+          <div class="form--input">
+            <input
+              class="input--secondary"
+              type="email"
+              placeholder="Enter your email..."
+            />
+          </div>
+          <div class="form--button">
+            <button class="btn btn--secondary">Get Started For Free</button>
+          </div>
+        </form>
       </div>
     </section>
-    <section class="callout">
-      Get early access today It only takes a minute to sign up and our free
-      starter tier is extremely generous. If you have any questions, our support
-      team would be happy to help you. Get Started For Free
-    </section>
     <footer>
-      Phone: +1-543-123-4567 example@fylo.com About Us Jobs Press Blog Contact
-      Us Terms Privacy
-
+      <div class="footer--logo">
+        <a href="index.html"
+          ><img class="logo" src="Images/logo2.svg" alt="logo of the company"
+        /></a>
+      </div>
+      <div class="company__contact">
+        <div>
+          <p class="phone">Phone: +1-543-123-4567</p>
+        </div>
+        <div>
+          <p class="mail">example@fylo.com</p>
+        </div>
+      </div>
+      <ul class="list--one">
+        <li><a href="#"></a>About Us</li>
+        <li><a href="#"></a>Jobs</li>
+        <li><a href="#"></a>Press</li>
+        <li><a href="#"></a>Blog</li>
+      </ul>
+      <ul class="list--two">
+        <li><a href="#"></a>Contact Us</li>
+        <li><a href="#"></a>Terms</li>
+        <li><a href="#"></a>Privacy</li>
+      </ul>
+      <div class="media--icons">
+        <a class="facebook" href="#"><i class="fab fa-facebook fa-1x"></i></i></a>
+        <a class="twitter" href="#"><i class="fab fa-twitter fa-1x"></i></a>
+        <a class="instagram" href="#"><i class="fab fa-instagram fa-1x"></i></a>
+      </div>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">Tomas Scerbak</a>.
       </p>
     </footer>
   </body>
