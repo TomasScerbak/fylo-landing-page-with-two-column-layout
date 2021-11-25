@@ -36,12 +36,18 @@ h3 {
 }
 h1 {
   font-size: 2.5rem;
+  font-weight: 700;
 }
 h3 {
   margin: 0;
 }
 p {
   font-size: 2rem;
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 4.5rem;
+  }
 }
 /* Images */
 img {
@@ -66,6 +72,9 @@ a {
 .container {
   display: grid;
   grid-template-rows: 1fr auto;
+}
+.callout--container {
+  background-color: var(--desaturated-blue);
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -99,7 +108,7 @@ input:focus {
 }
 @media screen and (min-width: 768px) {
   input {
-    width: 30%;
+    width: 50rem;
   }
 }
 /* Buttons */
@@ -124,6 +133,14 @@ input:focus {
 .btn--secondary {
   border-radius: 1px;
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .btn--primary {
+    width: 25rem;
+  }
+  .btn--secondary {
+    width: 20rem;
+  }
 }
 /* Navigation Bar */
 .navbar {
@@ -176,6 +193,20 @@ form {
 .hero__text {
   font-size: 1.5rem;
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    text-align: left;
+    padding: 3rem;
+  }
+  form {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .hero__text {
+    font-size: 2.1rem;
+  }
+}
 /* Feature Section */
 .feature {
   background-color: var(--light-grayish-blue);
@@ -193,8 +224,22 @@ form {
 }
 .feature__background {
   position: absolute;
-  top: -4.3%;
+  top: -3.9%;
   left: 0%;
+}
+@media screen and (min-width: 768px) {
+  .feature__heading {
+    text-align: left;
+    font-size: 3.5rem;
+    padding-left: 3rem;
+  }
+  .feature__text {
+    font-size: 2.1rem;
+    padding-left: 3rem;
+  }
+  .feature__background {
+    top: -12%;
+  }
 }
 /* Arrow */
 .arrow {
@@ -223,6 +268,16 @@ form {
   width: 55%;
   margin: auto;
   padding-top: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .arrow {
+    justify-content: left;
+    padding-left: 3rem;
+  }
+  .underline {
+    width: 24%;
+    margin-left: 3rem;
+  }
 }
 /* Testimonial Card */
 .testimonial--card {
@@ -253,6 +308,18 @@ form {
   font-size: 1rem;
   margin: 0;
 }
+@media screen and (min-width: 768px) {
+  .testimonial--card {
+    width: 50%;
+    margin-left: 3rem;
+  }
+  .quote__image {
+    width: 3.5rem;
+  }
+  .testimonial {
+    font-size: 1.5rem;
+  }
+}
 /* Callout Section */
 .callout {
   padding: 3rem 4rem 4rem 4rem;
@@ -265,10 +332,28 @@ form {
 }
 .callout__text {
   font-size: 1.5rem;
+  opacity: 70%;
 }
 .callout--form {
   width: 80%;
   margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .callout {
+    text-align: left;
+  }
+  .callout__heading {
+    font-size: 2.5rem;
+  }
+  .callout__text {
+    font-size: 2.1rem;
+  }
+  .callout--form {
+    flex-direction: column;
+  }
+  .form--input {
+    width: 80%;
+  }
 }
 /* Footer */
 footer {
@@ -291,11 +376,9 @@ footer {
 }
 .list--one {
   font-size: 1.5rem;
-  margin: 3rem;
 }
 .list--two {
   font-size: 1.5rem;
-  margin: 3rem;
 }
 .media--icons {
   text-align: center;
@@ -318,4 +401,21 @@ footer {
 }
 .attribution a {
   color: hsl(228, 33%, 76%);
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    margin: 10rem 0 0 8rem;
+  }
+  .footer--container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 5rem;
+  }
+  .list--one {
+    font-size: 1.8rem;
+  }
+  .list--two {
+    font-size: 1.8rem;
+  }
 }
