@@ -242,7 +242,7 @@ form {
     padding-left: 3rem;
   }
   .feature__background {
-    top: -12%;
+    top: -10%;
   }
 }
 /* Arrow */
@@ -341,6 +341,7 @@ form {
 .callout--form {
   width: 80%;
   margin: auto;
+  padding: 2rem;
 }
 @media screen and (min-width: 768px) {
   .callout {
@@ -382,9 +383,11 @@ footer {
 }
 .list--one {
   font-size: 1.5rem;
+  margin-left: 3rem;
 }
 .list--two {
   font-size: 1.5rem;
+  margin-left: 3rem;
 }
 .media--icons {
   text-align: center;
